@@ -1,0 +1,19 @@
+package Junit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class TestJunit2 {
+	
+	String message = "Robert";	
+	String messageUtil = new String(message);
+	 
+	   @Test
+	   public void testSalutationMessage() {
+	      System.out.println("Inside testSalutationMessage()");
+	      message = "Hi!" + "Robert";
+	      assertEquals(message,messageUtil);
+	   }
+
+}
